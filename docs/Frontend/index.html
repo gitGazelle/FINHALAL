@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinHalal - Welcome</title>
+   <link rel="stylesheet" href="assets/css/styles.css">
+>
+</head>
+<body>
+    <!-- Welcome Section -->
+
+
+    <section id="welcome" class="text-center">
+        <h1>Bismillah - In the name of Allah</h1>
+        <p class="greet">Assalamu Alaikum! Welcome to FinHalal, your trusted platform for Halal investment.</p>
+        <p>Our mission is to provide a reliable and Shariah-compliant stock picking service. We aim to guide you in making investments that align with Islamic principles.</p>
+        <p class="hadith" id="hadith">
+            <!-- JavaScript will insert a Hadith here -->
+        </p>
+    </section>
+
+    <!-- Navigation Links -->
+    <section id="navigation">
+        <div class="container">
+            
+    <nav>
+        <ul>
+            <li><a href="stock-analysis.html">Stock Analysis</a></li>
+            <li><a href="portfolio-builder.html">Portfolio Builder</a></li>
+            <li><a href="halal-sips.html">Halal SIPs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+        </div>
+    </section>
+
+    <!-- Login and Register Section -->
+<section id="auth-section">
+    <div class="container">
+        <h2>Sign In or Register</h2>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Website Aim -->
+    <section id="website-aim">
+        <h2>Our Aim</h2>
+        <p>At FinHalal, we provide a comprehensive analysis to determine the Shariah compliance of stocks listed on global stock markets. Our goal is to make financial growth accessible to Muslims worldwide, ensuring your investments align with Islamic values.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FinHalal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        // JavaScript to display a random Hadith each time the page loads
+        const hadiths = [
+            "The one who is a trader and has good intentions, Allah will bless his earnings. ~ Prophet Mohammad ﷺ",
+            "The best of earnings is that which comes from trade. ~ Prophet Mohammad ﷺ",
+            "Seeking knowledge is an obligation upon every Muslim. ~ Prophet Mohammad ﷺ",
+            "Honesty in trade brings blessings and success. ~ Prophet Mohammad ﷺ",
+            "Allah has made trade lawful and usury unlawful. ~ Prophet Mohammad ﷺ",
+            "The curse of Allah is upon the one who deals in usury and those who benefit from it. ~ Prophet Mohammad ﷺ",
+            "A man’s wealth is his trade, and his earnings should be from halal sources. ~ Prophet Mohammad ﷺ",
+            "The Prophet Mohammad ﷺ said: 'Whosoever eats from the haram (unlawful) will be distanced from the mercy of Allah.'"
+        ];
+
+        // Select a random Hadith and display it
+        const randomHadith = hadiths[Math.floor(Math.random() * hadiths.length)];
+        document.getElementById("hadith").innerText = randomHadith;
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis - FinHalal</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stock-analysis.html">Stock Analysis</a></li>
+            <li><a href="portfolio-builder.html">Portfolio Builder</a></li>
+            <li><a href="halal-sips.html">Halal SIPs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Stock Analysis Section -->
+    <section id="stock-analysis">
+        <h1>Stock Analysis</h1>
+        <p>Enter the stock symbol or name to analyze if it is Shariah-compliant:</p>
+        <form action="" method="POST" id="stock-form">
+            <input type="text" id="stock-symbol" name="stock-symbol" placeholder="Enter Stock Symbol or Name" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <div id="stock-result">
+            <!-- Stock analysis results will appear here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FinHalal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

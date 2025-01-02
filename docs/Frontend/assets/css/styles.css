@@ -1,0 +1,195 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #004d40; /* Dark emerald for text */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffffff; /* White nav bar */
+    border-bottom: 2px solid #66bb6a; /* Emerald bottom border */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #004d40;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #66bb6a; /* Emerald background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Header Section */
+#welcome {
+    text-align: center;
+    padding: 150px 20px 100px;
+    background: linear-gradient(to bottom right, #ffffff, #e0f2f1); /* Subtle white-to-light green gradient */
+    color: #004d40;
+    animation: candleDrop 1.5s ease-out forwards;
+}
+
+#welcome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #004d40;
+}
+
+#welcome p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hadith {
+    font-style: italic;
+    font-size: 22px;
+    color: #2e7d32; /* Medium emerald for hadith */
+}
+
+/* Buttons */
+button, .button-link {
+    background-color: #66bb6a; /* Emerald button background */
+    color: #ffffff; /* White text */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover, .button-link:hover {
+    transform: scale(1.05);
+    background-color: #2e7d32; /* Dark emerald hover effect */
+}
+
+/* Form Section */
+form {
+    background-color: #f1f8e9; /* Light green form background */
+    border: 2px solid #66bb6a; /* Emerald border */
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 10px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+form input, form textarea {
+    background-color: #ffffff;
+    color: #004d40;
+    border: 1px solid #66bb6a;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #66bb6a;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #2e7d32;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #004d40;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+/* Candle Drop Animation */
+@keyframes candleDrop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
